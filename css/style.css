@@ -7,3 +7,8 @@ img{
     height: 815px;
     width: 705px;
 }
+
+.notify-section{
+    display: none;
+
+}

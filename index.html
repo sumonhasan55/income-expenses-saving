@@ -11,6 +11,7 @@
 
 <body>
     <section>
+      
         <div class="">
             <h1 id="web-title">Income <span style="color: red;">Expencess</span>  & <span style="color: green;">Saving </span> Calculate</h1>
         </div>
@@ -19,37 +20,39 @@
                 <div class="col">
                   <img src="./images/first-Income-Expence-Saving (4).jpg" class="rounded mx-auto d-block" alt="">
                 </div>
-                <div class="col bg-success p-5 text-dark bg-opacity-10">
-                  <h5 class="text-center" >income</h5>
+                <div class="col bg-success p-10 text-dark bg-opacity-10">
+                  <h5 class="text-center">income</h5>
                   <span id="income-input">Income:</span>
-                  <input type="text"><br><br>
+                  <input id="income-total" type="text"><br><br>
                   <h5 class="text-center">Expenses</h5>
-                  <span class="mt-5" id="income-input">Food:</span>
-                  <input type="text"><br><br>
-                  <span class="mt-5" id="income-input">Rent:</span>
-                  <input type="text"><br><br>
-                  <span class="mt-5" id="income-input">Clothes:</span>
-                  <input type="text"><br><br>
+                  <span class="mt-5" >Food:</span>
+                  <input id="food-input" type="text"><br><br>
+                  <span class="mt-5" id="rent">Rent:</span>
+                  <input id="rent-input" type="text"><br><br>
+                  <span class="mt-5" id="clothes">Clothes:</span>
+                  <input id="clothes-input" type="text"><br><br>
                  <button id="calculate-btn" class="btn btn-primary position-relative start-75 mb-5">Calculate</button>
-                  <h5 class="mb-3 text-center ">Total Expenses: 5500 </h5>
-                  <h5 class="my-3 text-center">Balance: 4500</h5>
+                  <h5 id="" class="mb-3 text-center ">Total Expenses:$<span id="total-expenses">00</span>  </h5>
+                  <h5 class="my-3 text-center">Balance:$<span id="blance-total">00</span> </h5>
                   <div class="d-flex flex-row">
                     <div class=""><span class="mt-5" id="income-input">Save:</span>
-                      <input type="text"></div>
+                      <input id="save-percent-input" type="text"></div>
                     <div class=""><p>%</p></div>
-                    <div class=""><button id="calculate-btn" class="btn btn-primary">Save</button></div>
+                    <div class=""><button id="save-btn" class="btn btn-primary">Save</button></div>
                   </div>
-                  <h5 class="mt-5 text-center">Saving Amount: 2000 </h5>
-                  <h5 class="mt-5 text-center">Remaining Balance: 2500 </h5>
+                  <h5 class="mt-5 text-center">Saving Amount:$<span id="save-total">00</span></h5>
+                  <h5 class="mt-5 text-center">Remaining Balance:$<span id="remaining-blance">00</span>  </h5>
                 </div>
+               
               </div>
+             
         </div>
-
     </section>
-    
-    
-
-
+    <section>
+      <div class="notify-section text-center">
+        <p id="notify" class="notify">❌ input a vaild number & Please try again</p>
+    </div>
+    </section>
 
     <script src="./js/moneycalculate.js"></script>
 </body>
